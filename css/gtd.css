@@ -1,0 +1,205 @@
+/* Main layout */
+body {
+    margin: 0 auto;
+    width: 97%;
+    margin: auto;
+    padding: 20px;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 100%;
+}
+#left {
+    width: 50%; 
+    float: left;
+}
+#right {
+    width: 45%; 
+    position: fixed;
+    height: 95%;
+    left: auto;
+    right: 1em;
+}
+
+#timeline {
+    height: 90%; 
+}
+
+#footer {
+    padding-top: 1em;
+    font-size: 70%;
+    color: gray;
+    text-align: center;
+}
+
+#context-summary {
+    overflow: auto;
+    font-size: 100%;
+}
+
+pre {
+    border: 1px dotted gray;
+    padding: 0.5em;
+}
+code {
+    font-family: monospace;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a { 
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5 { 
+    font-family: verdana;
+    font-weight: bold;
+}
+h1 {
+    font-size: 130%;
+}
+
+h2 {
+    font-size: 110%;
+}
+
+h3 {
+    font-size: 100%;
+}
+
+h4 {
+    font-size: 95%;
+}
+
+h5 {
+    font-size: 90%;
+}
+
+h1.title {
+    font-size: 200%;
+    font-weight: bold;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    text-align: left;
+    border: none;
+}
+
+p.todo {
+    padding: 0.5em;
+    -moz-border-radius: 10px;
+}
+
+/*
+http://colorschemedesigner.com/#2S42hvKppsOV3
+*/
+
+.notstarted {
+    border: 2px solid grey;
+    background-color: #F5F5F5;
+}
+.cancelled {
+    border: 2px solid #1C782C;
+    background-color: #F5F5F5;
+}
+.cancelled  {
+    border: 2px solid #9D2D24;
+    background-color: #F5F5F5;
+}
+.halted  {
+    border: 2px solid #000000;
+    background-color: #F5F5F5;
+}
+.completed {
+    border: 2px solid #1C782C;
+    background-color: #C9F6D1
+}
+.inprocess {
+    border: 2px solid #203969;
+    background-color: #CCD9F4;
+}
+.needsaction {
+    border: 2px solid #9D2D24;
+    background-color: #FAD0CD
+}
+.unknown {
+    border: 2px solid #9D7324;
+    background-color: #FAEACD;
+}
+
+
+p.focus {
+    background-color: #FFFFFF;
+}
+
+dt code {
+    font-weight: bold;
+}
+dd p {
+    margin-top: 0;
+}
+
+
+.tickler-selectable .ui-selecting { 
+}
+
+.tickler-selectable .ui-selected { 
+    color: grey;
+}
+
+.tickler-selectable { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    width: 60%; 
+}
+
+.tickler-selectable li { 
+    margin: 3px; 
+    height: 18px; 
+}
+
+
+@media print {
+
+    div.project  {
+	page-break-before: always;
+    }
+
+    div.project:first-child {
+	page-break-before: avoid;
+	counter-reset: page;
+    }
+
+    #right {
+	display: none;
+    }
+    #left {
+	width: 100%; 
+    }
+}
+
+/* Calendar stuff */
+
+.main {
+width:200px;
+border:1px solid black;
+}
+
+.month {
+background-color:black;
+font:bold 12px verdana;
+color:white;
+}
+
+.daysofweek {
+background-color:gray;
+font:bold 12px verdana;
+color:white;
+}
+
+.days {
+font-size: 12px;
+font-family:verdana;
+color:black;
+background-color: lightyellow;
+padding: 2px;
+}
+
+.days #today{
+font-weight: bold;
+color: red;
+}

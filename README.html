@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    ></title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta name="generator" content="pandoc"
+     /></head
+  ><body
+  ><div id="about-lessmess"
+    ><h2
+      >ABOUT LESSMESS</h2
+      ><p
+      >Lessmess is a light-weight approach to task management. Lessmess provides an interactive view of text-based task lists. You will still need to edit your tasks as text in your favourite text editor, but you will get a better overview of the status of individual tasks.</p
+      ><p
+      >You write your task lists using <a href="http://daringfireball.net/projects/markdown/syntax"
+	>Markdown</a
+	> syntax, with a few additional rules to define individual tasks. As the task list is converted to HTML, Javascript functionality is inserted and enhances the HTML with interactive functionality. Lessmess is designed to work with the HTML that is created by Pandoc, an excellent Markdown parser. Since the Javascript manipulations performed on the generated HTML is quite advanced, it is not likely that Lessmess will work well with other Markdown parsers since that HTML will likely differ in various aspects.</p
+      ><p
+      >Lessmess:</p
+      ><ul
+      ><li
+	>Generates color coding of tasks according to status</li
+	><li
+	>Generates statistics of tasks per project Allows easy navigation between projects in the same file</li
+	><li
+	>Handles several projects (task-lists) in the same text file</li
+	><li
+	>Recognises GTD contexts Uses internal data structures for tasks that are well aligned with the ical standard</li
+	><li
+	>Parses date information and displays a time line of tasks</li
+	></ul
+      ></div
+    ><div id="how-to-use-lessmess"
+    ><h2
+      >HOW TO USE LESSMESS</h2
+      ><p
+      >Lessmess requires <a href="http://johnmacfarlane.net/pandoc"
+	>Pandoc</a
+	>.</p
+      ><p
+      >Lessmess is applied in the conversion of Markdown source to HTML, using pandoc. Just include a header, the file &quot;header.inc&quot; in the conversion step with pandoc:</p
+      ><pre
+      ><code
+	> pandoc -H header.inc -s todo.txt -o todo.html
+</code
+	></pre
+      ><p
+      >The generated HTML file must have acess to a number of files in its directory:</p
+      ><ul
+      ><li
+	>header.inc<br
+	   /></li
+	><li
+	>the &quot;jquery&quot; directory</li
+	><li
+	>the &quot;css&quot; directory</li
+	></ul
+      ></div
+    ><div id="how-to-write-markdown-for-lessmess"
+    ><h2
+      >HOW TO WRITE MARKDOWN FOR LESSMESS</h2
+      ><p
+      >A task in Lessmess is defined by prefixing a paragraph with brackets with a status indicator between the brackets:</p
+      ><pre
+      ><code
+	><br
+	   />[ ] Not started
+
+[+] Completed
+
+[-] Aborted
+
+[&gt;] In process
+
+[&lt;] Halted
+
+[!] Needs action
+
+[?] Unknown status 
+
+</code
+	></pre
+      ><p
+      >Each of these lines are valid paragraphs in Markdown, but the Lessmess javascript will recognise them as tasks.</p
+      ><p
+      >If you want to provide additional information for a task there is an extended syntax which uses Markdown defintion list syntax. Provide a colon on the first line after the task definiton line, as follows:</p
+      ><pre
+      ><code
+	>[&gt;] Use defintion lists for follow up text. @context 
+:   By using the definition list syntax with a colon 
+    after the first line folled by tab we will be able to work this out better
+
+:   That is pretty cool since it allows
+
+:   * ordered lists
+    * and more
+
+:   Here is one definition.  It may contain multiple blocks.
+    Here is some code:
+
+:       {* my code *} 
+
+:   Here is the another paragraph of this definition.
+</code
+	></pre
+      ><p
+      >You can mark tasks with context tags using an at-sign, as is common for many other GTD programs. Example of contexts are @email or @phone. Tasks that are tagged with contexts can be sorted together to make it easier for you to get an overview of them.</p
+      ><pre
+      ><code
+	>[ ] Buy milk. @shopping
+
+[+] Call the dentist. @phone
+
+</code
+	></pre
+      ><p
+      >You can mark tasks with date information. The date syntax is according to ISO8601. The intention is for Lessmess to closely model the date information that is available in the ical standard. However, the usage of date information is not yet completed.</p
+      ><pre
+      ><code
+	>[ ] Project meeting. dtstart:2009-09-01
+
+</code
+	></pre
+      ></div
+    ></body
+  ></html
+>
+
