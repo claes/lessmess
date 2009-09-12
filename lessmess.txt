@@ -1,5 +1,5 @@
-How it works:
-=============
+How it works
+============
 
 [ ] Not started
 
@@ -27,6 +27,7 @@ TODO
 [ ] Scroll timeline according to click on todos
 
 [ ] One-file-bundle
+:   Might not be possible
 
 [+] CSS for printing
 
@@ -54,7 +55,7 @@ TODO
 
 [ ] Persistence of user settings (cookie?)
 
-[ ] Fancier styling
+[>] Fancier styling
 
 [ ] Improved date parsing. More formats supported etc
 
