@@ -1,0 +1,129 @@
+How it works
+============
+
+[ ] Not started
+
+[+] Completed
+
+[-] Aborted
+
+[>] In process
+
+[<] Halted
+
+[!] Needs action
+
+[?] Unknown status
+
+TODO
+====
+
+[ ] Date handling on heading level
+
+[ ] Icons with colors that corresponds to status colors
+
+[+] Nicer color scheme
+
+[ ] Scroll timeline according to click on todos
+
+[ ] One-file-bundle
+:   Might not be possible
+
+[+] CSS for printing
+
+[ ] Improve parsing of textual info
+
+[+] List contexts
+
+[+] Lists projects
+
+[ ] Generate ical events using data uris
+
+[>] Tab panel with statistics
+
+[ ] Calendar component
+
+[ ] Sort on status
+
+[>] Filter on status
+
+[ ] Status 'ignore' etc
+
+[ ] Keyboard control
+
+[ ] Different 'zoom levels'
+
+[ ] Persistence of user settings (cookie?)
+
+[>] Fancier styling
+
+[ ] Improved date parsing. More formats supported etc
+
+[+] Scoll and highlight clicks on timeline
+
+[+] Example with contexts: @phone @email
+
+[>] Another example with contexts: @email
+
+[ ] Example with dates due:2009-06-01
+
+[ ] Another example with dates due:2009-07-01
+
+[ ] Yet another example with dates dtstart:2009-05-01
+
+
+Date syntax (ISO8601)
+====================
+
+2009-03-29T00:10:30
+2009W23
+
+Markdown cheat sheet
+====================
+
+## Header 2 ##
+### Header 3 ###
+#### Header 4 ####
+##### Header 5 #####
+
+This is a paragraph, which is text surrounded by whitespace.
+Paragraphs can be on one line (or many), and can drone on
+for hours.   Here is a Markdown link to [Google](http://www.google.com), 
+and a literal. 
+A picture: ![picture alt](http://images.google.se/images/isr_g.png "Google image")     
+
+Now some inline markup like _italics_,  **bold**, and `code()`.
+
+> Blockquotes are like quoted text in email replies
+
+* Bullet lists are easy too
+- Another one
++ Another one
+
+1. A numbered list
+2. Which is numbered
+3. With periods and a space
+
+And now some code:
+
+    // Code is just text indented a bit
+    which(is_easy) to_remember();
+
+Text with  
+two trailing spaces  
+(on the right)  
+can be used  
+for things like poems  
+ 
+Horizontal rule
+
+--------------------------
+
+Simple table:
+
+  Right     Left     Center     Default   
+-------     ------ ----------   -------   
+     12     12        12            12    
+    123     123       123          123    
+
+Table:  Demonstration of simple table syntax.
