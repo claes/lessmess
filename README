@@ -4,7 +4,7 @@ Lessmess is a light-weight approach to task management. Lessmess
 provides an interactive view of text-based task lists. You will still
 need to edit your tasks as text in your favourite text editor, but you
 will get a better overview of the status of individual tasks. In a nutshell, you
-write [this](lessmess.txt) to generate [this](lessmess.html).
+write [this](example.txt) to generate [this](example.html).
 
 You write your task lists using
 [Markdown](http://daringfireball.net/projects/markdown/syntax) syntax,

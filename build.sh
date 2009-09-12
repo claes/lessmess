@@ -1,2 +1,2 @@
 #!/bin/sh 
-pandoc -H header.inc -s lessmess.txt -o lessmess.html
+pandoc -H include/header.inc -s example.txt -o example.html
