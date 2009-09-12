@@ -83,6 +83,12 @@ p.todo {
     -moz-border-radius: 10px;
 }
 
+.clickable {
+    text-decoration: underline;
+    font-style: italic;
+    cursor: pointer;
+}
+
 /*
 http://colorschemedesigner.com/#2S42hvKppsOV3
 */

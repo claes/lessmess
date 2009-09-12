@@ -15,20 +15,52 @@
       ><p
       >You write your task lists using <a href="http://daringfireball.net/projects/markdown/syntax"
 	>Markdown</a
-	> syntax, with a few additional rules to define individual tasks. As the task list is converted to HTML, Javascript functionality is inserted and enhances the HTML with interactive functionality. Lessmess is designed to work with the HTML that is created by Pandoc, an excellent Markdown parser. Since the Javascript manipulations performed on the generated HTML is quite advanced, it is not likely that Lessmess will work well with other Markdown parsers since that HTML will likely differ in various aspects.</p
-      ><p
-      >Lessmess:</p
+	> syntax, with a few additional rules to define individual tasks. As the task list is converted to HTML, Javascript functionality is inserted and enhances the HTML with interactive functionality. Lessmess is designed to work with the HTML that is created by Pandoc, which an excellent Markdown parser. Since the Javascript manipulations performed on the generated HTML is tuned to the markup Pandoc generates, it is not likely that Lessmess will work well with other Markdown parsers.</p
+      ></div
+    ><div id="terminology"
+    ><h2
+      >Terminology</h2
+      ><dl
+      ><dt
+	>Project</dt
+	><dd
+	><p
+	  >A project is defined as a section of text following a header.</p
+	  ></dd
+	><dt
+	>Task</dt
+	><dd
+	><p
+	  >A task is one or several lines starting with [ ], with an optional status symbol between the brackets.</p
+	  ></dd
+	><dt
+	>Context</dt
+	><dd
+	><p
+	  >A tag, starting with the at-sign. Is used to group related tasks together, even if included in different projects.</p
+	  ></dd
+	></dl
+      ></div
+    ><div id="features"
+    ><h2
+      >Features</h2
       ><ul
       ><li
 	>Generates color coding of tasks according to status</li
 	><li
-	>Generates statistics of tasks per project Allows easy navigation between projects in the same file</li
+	>Generates statistics of tasks per project</li
+	><li
+	>Allows easy navigation between projects in the same file</li
 	><li
 	>Handles several projects (task-lists) in the same text file</li
 	><li
 	>Recognises GTD contexts Uses internal data structures for tasks that are well aligned with the ical standard</li
 	><li
 	>Parses date information and displays a time line of tasks</li
+	><li
+	>Generates HTML that prints &quot;one project per paper&quot; - a linebreak before each header section.</li
+	><li
+	>Allows you to print individual projects directly.</li
 	></ul
       ></div
     ><div id="how-to-use-lessmess"

@@ -1,4 +1,4 @@
-<link type="text/css" rel="stylesheet" href="css/gtd.css" media="all">
+<link type="text/css" rel="stylesheet" href="css/lessmess.css" media="all">
 <link type="text/css" rel="stylesheet" href="css/smoothness/jquery-ui-1.7.1.custom.css" media="all">
 <script type="text/javascript" src="jquery/jquery-1.3.2.min.js"></script>
 <script type="text/javascript" src="jquery/jquery.lessmess.js"></script>

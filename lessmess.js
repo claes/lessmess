@@ -26,7 +26,7 @@ function init_tickler() {
     $('#projects-table').append('<tr><th align="left">Project</th><th title="Not started">&nbsp;</th><th title="Completed">+</th><th title="Cancelled">-</th>'+
 				'<th title="In process">&gt;</th><th title="Halted">&lt;</th><th title="Needs action">!</th><th title="Unknown status">?</th><th></th></tr>');
     for (var project in ical.projects) {
-	$('#projects-table').append('<tr projectname="'+project+'"><td id="show-project-'+project+'" ><i>'+ical.projects[project].name+'</i></td>'+
+	$('#projects-table').append('<tr projectname="'+project+'"><td id="show-project-'+project+'" ><span class="clickable">'+ical.projects[project].name+'</span></td>'+
 				    (ical.projects[project].todoStats.notstarted > 0 ? 
 				    '<td class="notstarted" todostatus="notstarted"><input type="checkbox" checked>'+ical.projects[project].todoStats.notstarted+'</td>' : 
 				     '<td></td>') +
@@ -48,7 +48,7 @@ function init_tickler() {
 				    (ical.projects[project].todoStats.unknown > 0 ?
 				     '<td class="unknown" todostatus="unknown"><input type="checkbox" checked>'+ical.projects[project].todoStats.unknown+'</td>':
 				     '<td></td>') +
-				    '<td id="print-project-'+project+'">Print</td>'+
+				    '<td id="print-project-'+project+'" class="clickable">Print</td>'+
 				    '</tr>');
 
 	$('#projects-table input[type="checkbox"]').change(function() {
@@ -125,7 +125,7 @@ function init_tickler() {
 
     for (var context in ical.contexts) {
 	$('#context-stats').append('<tr contextname="'+context+'"><td id="todo-contexts-'+context+'" ><input type="checkbox" checked>'+
-				   '<span id="summarize-context-'+context+'">'+context+'</span></td></tr>');
+				   '<span id="summarize-context-'+context+'" class="clickable">'+context+'</span></td></tr>');
 	$('#summarize-context-'+context).click(function() {
 		var context = $(this).parent().parent().attr('contextname');
 		$('#context-summary').empty();

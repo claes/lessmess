@@ -10,19 +10,35 @@ You write your task lists using
 with a few additional rules to define individual tasks. As the task
 list is converted to HTML, Javascript functionality is inserted and
 enhances the HTML with interactive functionality. Lessmess is designed
-to work with the HTML that is created by Pandoc, an excellent Markdown
+to work with the HTML that is created by Pandoc, which an excellent Markdown
 parser. Since the Javascript manipulations performed on the generated
-HTML is quite advanced, it is not likely that Lessmess will work well
-with other Markdown parsers since that HTML will likely differ in
-various aspects.
+HTML is tuned to the markup Pandoc generates, it is not likely that 
+Lessmess will work well with other Markdown parsers. 
 
-Lessmess:
+## Terminology
+
+Project
+:	A project is defined as a section of text following a header. 
+
+Task
+:	A task is one or several lines starting with [ ], with an optional
+	status symbol between the brackets.
+
+Context
+:	A tag, starting with the at-sign. Is used to group related tasks
+	together, even if included in different projects. 
+
+## Features
 
 * Generates color coding of tasks according to status 
-* Generates statistics of tasks per project Allows easy navigation between projects in the same file 
+* Generates statistics of tasks per project 
+* Allows easy navigation between projects in the same file 
 * Handles several projects (task-lists) in the same text file 
 * Recognises GTD contexts Uses internal data structures for tasks that are well aligned with the ical standard
 * Parses date information and displays a time line of tasks
+* Generates HTML that prints "one project per paper" - a linebreak before each
+header section.
+* Allows you to print individual projects directly. 
 	
 ## HOW TO USE LESSMESS
 

@@ -1,29 +1,3 @@
-TEST
-====
-
-
-[>] Use defintion lists for follow up text. @context 
-:   By using the definition list syntax with a colon 
-    after the first line folled by tab we will be able to work this out better
-
-:   That is pretty cool since it allows
-
-:   * ordered lists
-    * and more
-
-:   Here is one definition.  It may contain multiple blocks.
-    Here is some code:
-
-:       {* my code *} 
-
-:   Here is the another paragraph of this definition.
-
-And between items we can have regular paragraphs
-
-[+] And then yet another item
-:   Followed by a more detailed description
-
-
 How it works:
 =============
 
@@ -41,8 +15,6 @@ How it works:
 
 [?] Unknown status
 
-[*] 
-
 TODO
 ====
 
@@ -50,19 +22,19 @@ TODO
 
 [ ] Icons with colors that corresponds to status colors
 
-[ ] Nicer color scheme
+[+] Nicer color scheme
 
 [ ] Scroll timeline according to click on todos
 
 [ ] One-file-bundle
 
-[ ] CSS for printing
+[+] CSS for printing
 
 [ ] Improve parsing of textual info
 
-[ ] List contexts
+[+] List contexts
 
-[ ] Lists projects
+[+] Lists projects
 
 [ ] Generate ical events using data uris
 
@@ -74,7 +46,7 @@ TODO
 
 [>] Filter on status
 
-[ ] Status 'ignore'
+[ ] Status 'ignore' etc
 
 [ ] Keyboard control
 
@@ -97,41 +69,6 @@ TODO
 [ ] Another example with dates due:2009-07-01
 
 [ ] Yet another example with dates dtstart:2009-05-01
-
-
-EVENT
-=====
-
-< >
-
-Weekly calendar
-============
-
-*2008-01-01* Hej och hå
-
-Weekly calendar
-============
-
-Week: 13.  (2009W13)
-
----------------------------------------
-Day           Date    Notes
------------  ------  -------------------
-Monday        23/3    Måste komma ihåg att
-	      	      kopa bröd mjölk och smör
-                     
-Tuesday       24/3
-
-Wednesday     25/3
-
-Thursday      26/3
-
-Friday	      27/3
-
-Saturday      28/3
-
-Sunday	      29/3
-----------------------------------------
 
 
 Date syntax (ISO8601)
