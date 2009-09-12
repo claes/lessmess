@@ -22,12 +22,10 @@ Project
 :	A project is defined as a section of text following a header. 
 
 Task
-:	A task is one or several lines starting with [ ], with an optional
-	status symbol between the brackets.
+:	A task is one or several lines starting with [ ], with an optional status symbol between the brackets.
 
 Context
-:	A tag, starting with the at-sign. Is used to group related tasks
-	together, even if included in different projects. 
+:	A tag, starting with the at-sign. Is used to group related tasks together, even if included in different projects. 
 
 ## Features
 
@@ -90,8 +88,7 @@ colon on the first line after the task definiton line, as follows:
 
 ~~~ 
 [>] Use defintion lists for follow up text. @context 
-:   By using the definition list syntax with a colon 
-    after the first line folled by tab we will be able to work this out better
+:   By using the definition list syntax with a colon after the first line folled by tab we will be able to work this out better
 
 :   That is pretty cool since it allows
 
