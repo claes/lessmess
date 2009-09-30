@@ -49,12 +49,8 @@ conversion step with pandoc:
 
 	 pandoc -H header.inc -s todo.txt -o todo.html
 
-The generated HTML file must have acess to a number of files in its
-directory:
-  
-* header.inc  	    
-* the "jquery" directory 
-* the "css" directory
+The generated HTML file must have access to the "include" directory in its directory
+when it is opened.
 
 ## HOW TO WRITE MARKDOWN FOR LESSMESS
 
